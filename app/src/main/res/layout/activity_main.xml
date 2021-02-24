@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_time_10"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="快速定位10点"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_tip"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tip"></TextView>
+
+    <TextView
+        android:id="@+id/tv_time_12"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="快速定位12点"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_tip"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_10"></TextView>
+
+    <TextView
+        android:id="@+id/tv_time_20"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="快速定位20点"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_tip"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_12">
+
+    </TextView>
+    <TextView
+        android:id="@+id/tv_choice_internet"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="选择网络时间参考"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_tip"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_20">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_time_jd"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="京东时间"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_tip"
+        app:layout_constraintTop_toBottomOf="@+id/tv_choice_internet">
+
+    </TextView>
+    <TextView
+        android:id="@+id/tv_time_tb"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="淘宝时间"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_tip"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_jd">
+
+    </TextView>
+    <TextView
+        android:id="@+id/tv_time_tm"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="天猫时间"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_tip"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_tb">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1:切换后台自动悬浮窗,\n2:倒计时默认以本机时间为主,请先将本机时间与网络时间同步\n3:本程序提前500mm震动提示,若无震动请将手机震动打开(设置->搜索->震动)"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_year"
+        style="@style/text_bold_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="2021"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/year"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/year"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_year"
+        app:layout_constraintRight_toLeftOf="@+id/tv_month"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_month"
+        style="@style/text_bold_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="01"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/year"
+        app:layout_constraintRight_toLeftOf="@+id/month"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/month"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="月"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_month"
+        app:layout_constraintRight_toLeftOf="@+id/tv_day"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_day"
+        style="@style/text_bold_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="04"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/month"
+        app:layout_constraintRight_toLeftOf="@+id/day"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_day"
+        app:layout_constraintRight_toLeftOf="@+id/tv_time"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_time"
+        style="@style/text_bold_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="20"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/day"
+        app:layout_constraintRight_toLeftOf="@+id/time"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_time"
+        app:layout_constraintRight_toLeftOf="@+id/tv_branch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_branch"
+        style="@style/text_bold_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="00"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/time"
+        app:layout_constraintRight_toLeftOf="@+id/branch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/branch"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_branch"
+        app:layout_constraintRight_toLeftOf="@+id/tv_second"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_second"
+        style="@style/text_bold_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="00"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/branch"
+        app:layout_constraintRight_toLeftOf="@+id/second"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/second"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="秒"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_second"
+        app:layout_constraintRight_toLeftOf="@+id/tv_millisecond"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_millisecond"
+        style="@style/text_bold_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="00"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/second"
+        app:layout_constraintRight_toLeftOf="@+id/millisecond"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/millisecond"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="豪"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_millisecond"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/tv_start_down"
+        style="@style/text_bold_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本机开始倒计时"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_year" />
+
+    <Button
+        android:id="@+id/tv_show_down_time"
+        style="@style/text_bold_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="网络时间开始倒计时"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_start_down" />
+</androidx.constraintlayout.widget.ConstraintLayout>
